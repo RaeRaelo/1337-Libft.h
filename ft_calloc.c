@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/18 17:45:08 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/19 09:34:43 by adahadda         ###   ########.fr       */
+/*   Created: 2025/10/19 09:59:55 by adahadda          #+#    #+#             */
+/*   Updated: 2025/10/19 10:44:33 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <stdio.h>
 
-char *ft_strnstr(const char *big, const char *little, size_t len)
+void *ft_calloc(size_t nmemb, size_t size)
 {
-	size_t	i;
-	size_t	j;
+	char*	ptr;
+
+	ptr = malloc(nmemb * size);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, (nmemb * size));
+	return (ptr);
+}
+
+int main()
+{
+	char	*p;
+	p = ft_calloc(10, 4);
 	
-	i = 0;
-	if (*little == '\0')
-		return ((unsigned char *)big);
-	while (big[i] && len > i)
-	{
-		j = 0;
-		while (big[j + i] == little[j])
-		{
-			if (little[j] == '\0')
-				return (&((char *)big)[i]);
-			j++;
-		}
-		i++;
-	}
-	return (NULL);
+	while (p)
+		printf("Output : %d\n", p);
 }
