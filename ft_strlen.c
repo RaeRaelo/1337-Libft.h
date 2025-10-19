@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:14:44 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/14 17:55:42 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/19 13:45:05 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
-		s[i++];
+		i++;
 	return (i);
 }

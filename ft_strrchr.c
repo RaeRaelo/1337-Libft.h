@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 18:40:32 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/18 14:18:57 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/19 13:57:41 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 char	*ft_strrchr(const char *str, int ch)
 {
-	const char *last = NULL;
-	
+	const char	*last = NULL;
+
 	while (*str)
 	{
 		if (*str == (char)ch)
@@ -24,12 +24,6 @@ char	*ft_strrchr(const char *str, int ch)
 		str++;
 	}
 	if (ch == '\0')
-		return (char *)str;
-	return (char *)last;
-}
-
-int main()
-{
-	char x[] = "hello,my,name,saad";
-	printf("%s\n", ft_strrchr(x, ','));
+		return ((char *)str);
+	return ((char *)last);
 }
