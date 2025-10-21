@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 11:24:23 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/21 12:05:55 by adahadda         ###   ########.fr       */
+/*   Created: 2025/10/19 14:54:50 by adahadda          #+#    #+#             */
+/*   Updated: 2025/10/21 14:19:08 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 #include <stdio.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t			i;
-	unsigned char	*pdest;
-	unsigned char	*psrc;
+	unsigned char	*ss;
+	unsigned int	i;
 
-	if (!dest && !src)
+	if (!s)
 		return (NULL);
-	pdest = (unsigned char *)dest;
-	psrc = (unsigned char *)src;
+	ss = malloc(sizeof(char) * (len + 1));
+	if (!ss)
+		return (NULL);
 	i = 0;
-	while (i < n)
+	while (i < len && s[start + i])
 	{
-		pdest[i] = psrc[i];
+		ss[i] = s[start + i];
 		i++;
 	}
-	return (dest);
+	ss[i] = '\0';
+	return ((char *)ss);
 }

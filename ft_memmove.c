@@ -6,11 +6,12 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 11:23:46 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/16 17:23:17 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:05:59 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

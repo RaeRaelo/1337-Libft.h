@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 11:24:23 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/21 12:05:55 by adahadda         ###   ########.fr       */
+/*   Created: 2025/10/21 15:47:35 by adahadda          #+#    #+#             */
+/*   Updated: 2025/10/21 15:48:55 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+char	**ft_split(char const *s, char c)
 {
-	size_t			i;
-	unsigned char	*pdest;
-	unsigned char	*psrc;
-
-	if (!dest && !src)
-		return (NULL);
-	pdest = (unsigned char *)dest;
-	psrc = (unsigned char *)src;
-	i = 0;
-	while (i < n)
-	{
-		pdest[i] = psrc[i];
-		i++;
-	}
-	return (dest);
+	
 }
