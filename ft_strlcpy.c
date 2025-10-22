@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 09:01:06 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/15 11:19:22 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:40:09 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	int	i;
+	size_t	i;
 
 	if (dstsize == 0)
 		return (ft_strlen(src));

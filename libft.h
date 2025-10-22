@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:59:44 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/21 15:47:06 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:41:39 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdio.h>
 # include <string.h>
 
+int		ft_isprint(int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);

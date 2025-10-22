@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:58:50 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/19 14:01:34 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/22 22:08:56 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	*ft_strdup(const char *s)
 		dup[i] = s[i];
 		i++;
 	}
-	dup[len + 1] = '\0';
+	dup[len] = '\0';
 	return (dup);
 }

@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 17:24:58 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/19 13:59:33 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:38:15 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	size_t			i;
 	unsigned char	ps1;
 	unsigned char	ps2;
-	int				diff;
 
 	i = 0;
 	while (i < n)
