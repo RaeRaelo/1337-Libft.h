@@ -6,29 +6,29 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 15:47:35 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/22 21:57:37 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/23 13:41:01 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int word_count (const char *s, char c)
+static size_t	word_count(const char *s, char c)
 {
 	size_t	i;
-	size_t	c;
+	size_t	count;
 
-	c = 0;
 	i = 0;
+	count = 0;
 	while (s[i])
 	{
 		while (s[i] && s[i] == c)
 			i++;
 		if (s[i])
-			c++;
+			count++;
 		while (s[i] && s[i] != c)
 			i++;
 	}
-	return (c);
+	return (count);
 }
 
 static size_t	size_till_sep(char const *s, char c)
@@ -41,19 +41,48 @@ static size_t	size_till_sep(char const *s, char c)
 	return (size);
 }
 
-static int	**panic_exit
-
-char **ft_split(char const *s, char c)
+static char	**panic_exit(char **ptr, size_t j)
 {
+	while (j--)
+		free(ptr);
+	free(ptr);
+	return (NULL);
+}
+
+static int	aux_strdup(char **out, char const *s, char c)
+{
+	size_t	len;
+
+	len = size_till_sep(s, c);
+	*out = (char *)ft_calloc(len + 1, sizeof(char));
+	if (!*out)
+		return (0);
+	ft_strlcpy(*out, s, len + 1);
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**ptr;
 	size_t	i;
-	size_t	size;
-	char	**dArray;
+	size_t	j;
 
+	if (!s)
+		return (0);
+	ptr = (char **)ft_calloc(word_count(s, c) + 1, sizeof(char *));
+	if (!ptr)
+		return (ptr);
+	j = 0;
 	i = 0;
-	dArray = (char **)malloc(sizeof(char *) * size + 1);
-	if (!dArray)
-		return (NULL);
 	while (s[i])
-	
-
+	{
+		while (s[i] && s[i] == c)
+			i++;
+		if (s[i] && s[i] != c)
+			if (!aux_strdup(&ptr[j++], &s[i], c))
+				return (panic_exit(ptr, --j));
+		while (s[i] && s[i] != c)
+			i++;
+	}
+	return (ptr);
 }
