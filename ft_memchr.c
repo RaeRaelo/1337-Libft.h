@@ -6,12 +6,11 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 16:56:55 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/22 22:54:55 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:29:01 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

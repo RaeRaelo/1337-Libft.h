@@ -1,35 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 10:04:56 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/29 17:29:35 by adahadda         ###   ########.fr       */
+/*   Created: 2025/10/29 14:55:11 by adahadda          #+#    #+#             */
+/*   Updated: 2025/10/29 16:47:58 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+int	ft_lstsize(t_list *lst)
 {
-	size_t	i;
-	size_t	dlen;
-	size_t	slen;
+	int		i;
+	t_list	*tmp;
 
 	i = 0;
-	dlen = 0;
-	slen = ft_strlen(src);
-	while (dlen < dstsize && dst[dlen])
-		dlen++;
-	if (dlen == dstsize)
-		return (dstsize + slen);
-	while (src[i] && dlen + i + 1 < dstsize)
+	tmp = lst;
+	while (tmp)
 	{
-		dst[dlen + i] = src[i];
+		tmp = tmp->next;
 		i++;
 	}
-	dst[dlen + i] = '\0';
-	return (dlen + slen);
+	return (i);
 }

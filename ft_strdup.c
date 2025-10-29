@@ -6,13 +6,11 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:58:50 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/22 22:08:56 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:29:25 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 char	*ft_strdup(const char *s)
 {

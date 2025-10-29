@@ -6,11 +6,10 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 09:01:06 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/22 20:40:09 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:29:51 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)

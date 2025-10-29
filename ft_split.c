@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 15:47:35 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/23 13:41:01 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/29 11:48:03 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static size_t	size_till_sep(char const *s, char c)
 static char	**panic_exit(char **ptr, size_t j)
 {
 	while (j--)
-		free(ptr);
+		free(ptr[j]);
 	free(ptr);
 	return (NULL);
 }

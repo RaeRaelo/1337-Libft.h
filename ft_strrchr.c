@@ -6,12 +6,11 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 18:40:32 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/19 13:57:41 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:30:04 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strrchr(const char *str, int ch)
 {

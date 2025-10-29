@@ -6,12 +6,11 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 11:24:23 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/21 12:05:55 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:29:07 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

@@ -6,12 +6,11 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:14:44 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/19 13:45:05 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:29:55 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 size_t	ft_strlen(const char *s)
 {
