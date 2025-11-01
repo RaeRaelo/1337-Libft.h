@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 11:22:12 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/16 11:23:20 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 08:44:26 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
+	if (!s)
+		return ;
 	ft_memset(s, 0, n);
 }

@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:58:50 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/29 17:29:25 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 09:22:20 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strdup(const char *s)
 	char	*dup;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	len = ft_strlen(s);
 	i = 0;
 	dup = malloc((sizeof(char) * len) + 1);

@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 18:40:32 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/29 17:30:04 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 09:52:01 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strrchr(const char *str, int ch)
 {
 	const char	*last = NULL;
 
+	if (!str)
+		return (NULL);
 	while (*str)
 	{
 		if (*str == (char)ch)

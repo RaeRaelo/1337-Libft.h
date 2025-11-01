@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 10:04:56 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/29 17:29:35 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 09:24:01 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	dlen;
 	size_t	slen;
 
+	if (!dst || !dstsize || !src)
+		return (ft_strlen(src));
 	i = 0;
 	dlen = 0;
 	slen = ft_strlen(src);

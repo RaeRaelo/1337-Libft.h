@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 14:54:50 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/21 14:19:08 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/11/01 18:40:15 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
+	if (ft_strlen(s) <= start)
+		return (malloc(1));
 	ss = malloc(sizeof(char) * (len + 1));
 	if (!ss)
 		return (NULL);

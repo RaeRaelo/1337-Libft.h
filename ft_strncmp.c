@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 14:01:36 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/19 13:57:58 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 09:45:15 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 	int		diff;
 
+	if (!s1)
+		return (-1);
+	if (!s2)
+		return (1);
 	i = 0;
 	if (n == 0)
 		return (0);

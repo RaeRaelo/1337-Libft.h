@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 09:35:21 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/22 22:07:01 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 08:51:20 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_atoi(const char *nptr)
 	int	res;
 	int	sign;
 
+	if (!nptr)
+		return (0);
 	i = 0;
 	res = 0;
 	sign = 1;

@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 10:06:02 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/22 16:43:51 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 10:26:05 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int	i;
 	int	j;
 
+	if (!s1 || !set)
+		return (NULL);
 	i = 0;
 	j = ft_strlen(s1) - 1;
 	while (to_trim(set, s1[i]))

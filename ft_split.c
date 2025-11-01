@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 15:47:35 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/29 11:48:03 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 09:20:51 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	ptr = (char **)ft_calloc(word_count(s, c) + 1, sizeof(char *));
 	if (!ptr)
 		return (ptr);

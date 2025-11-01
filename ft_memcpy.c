@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 11:24:23 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/29 17:29:07 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 10:26:34 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*pdest;
 	unsigned char	*psrc;
 
-	if (!dest && !src)
+	if (!dest || !src)
 		return (NULL);
 	pdest = (unsigned char *)dest;
 	psrc = (unsigned char *)src;

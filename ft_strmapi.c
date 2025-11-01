@@ -6,7 +6,7 @@
 /*   By: adahadda <adahadda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 15:55:53 by adahadda          #+#    #+#             */
-/*   Updated: 2025/10/23 16:39:08 by adahadda         ###   ########.fr       */
+/*   Updated: 2025/10/31 09:39:03 by adahadda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	size_t	len;
 	char	*str;
 
+	if (!s || !f)
+		return (NULL);
 	len = ft_strlen(s);
 	i = 0;
 	str = malloc((len + 1) * sizeof(char));
